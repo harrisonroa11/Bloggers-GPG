@@ -3,21 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Blog</title>
+  <title>Blog de la Clase</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Mi Blog Personal</h1>
-    <form id="postForm">
-      <input type="text" id="postTitle" placeholder="Título del post" required>
-      <textarea id="postContent" placeholder="Escribe tu post..." required></textarea>
-      <button type="submit">Publicar</button>
-    </form>
+    <h1>Blog de la Clase</h1>
+    <p>Publica tus ideas, pensamientos y aprendizajes.</p>
   </header>
+  
+  <section class="form-section">
+    <form id="postForm">
+      <input type="text" id="studentName" placeholder="Nombre del estudiante" required>
+      <input type="text" id="postTitle" placeholder="Título del post" required>
+      <textarea id="postContent" placeholder="Escribe tu post aquí..." required></textarea>
+      <button type="submit">Publicar</button>
+      <button type="button" id="clearAll">Borrar Todo</button>
+    </form>
+  </section>
+
   <main id="blogPosts">
-    <!-- Aquí aparecerán los posts -->
+    <!-- Aquí se mostrarán los posts -->
   </main>
+
+  <footer>
+    <p>Hecho por [Tu nombre] — Proyecto escolar</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
